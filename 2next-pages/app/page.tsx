@@ -5,7 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import ScrollAnimation from "@/components/ScrollAnimation";
+import UserNo from "@/components/userNum"
 
+import GetStarted from '@/components/GetStarted'
 
 
 export default function Home() {
@@ -31,12 +33,18 @@ export default function Home() {
    >
    about me
    </motion.button>
+
+   <ScrollAnimation><UserNo /></ScrollAnimation>
     
   </main>
-  <ScrollAnimation>Hello JI what is happening</ScrollAnimation>
+  
+  <ScrollAnimation><div className="text-center text-4xl font-bold ">
+  Hello JI what is happening
+    </div></ScrollAnimation>
    <div>
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis esse eos sed! Eligendi dolore nihil provident ratione, enim veritatis soluta necessitatibus dolorum. Quibusdam voluptates laboriosam unde laudantium aliquid ea repudiandae?
    </div>
+   <ScrollAnimation><GetStarted /></ScrollAnimation>
   </>
   );
 }

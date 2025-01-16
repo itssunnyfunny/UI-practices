@@ -13,12 +13,10 @@ export default function ScrollAnimation({children}:{children:React.ReactNode}) {
     initial={{
         opacity: 0,
         y: 50,
-        x:23
+     
     }}
-    animate={isInView? {opacity:1,y:0,x:0}:{opacity:0, y:50, x:23}}
-    transition={{duration: 2}}
-
-    className=" text-6xl font-bold text-center p-6 text-rose-500 "
+    animate={isInView? {opacity:1,y:0}:{opacity:0, y:50}}
+    transition={{duration: 6}}
     >
    {children}
     </motion.div>
