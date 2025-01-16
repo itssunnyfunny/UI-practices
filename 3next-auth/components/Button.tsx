@@ -1,3 +1,7 @@
+'use client'
+
+import {motion} from 'framer-motion'
+
 export default function Button({
     children = 'Btn',
     bgColor = 'bg-indigo-600',
@@ -5,9 +9,14 @@ export default function Button({
     textSize = 'text-xs'
   
   }) {
-     return <div>
-      <button className={` py-3 px-10 rounded-3xl border text-center opacity-80 ${fontWeight} ${bgColor} ${textSize} text-white  `}>
+     return <motion.button
+     initial={{opacity:1}}
+     whileHover={{scale:1.1,opacity:0.9}}
+     whileTap={{scale: 0.9, opacity:1}}
+     className={` py-3 px-10 rounded-3xl border text-center opacity-80 ${fontWeight} ${bgColor} ${textSize} text-white  `}
+     >
+     
         {children}
-      </button>
-     </div>
+     
+      </motion.button>
   }

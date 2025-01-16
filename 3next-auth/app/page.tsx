@@ -6,6 +6,7 @@ import UserNo from "@/components/Home/UserNo";
 import UserReview from "@/components/Home/UserReview";
 import Footer from '@/components/Home/Footer'
 import Image from "next/image";
+import ScrollAnimation from "@/components/Animation/scrollBarAnimation";
 
 export default function Home() {
   return (
@@ -13,8 +14,9 @@ export default function Home() {
     <div className="col-start-2 ">
 
         <Landing />
-        <CustomerReview />
-       <GetStared />
+       
+        <ScrollAnimation> <CustomerReview /></ScrollAnimation>
+        <GetStared />
       <UserReview />
       <UserNo />
      

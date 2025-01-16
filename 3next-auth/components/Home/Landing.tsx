@@ -4,8 +4,7 @@ import Button from "../Button"
   return (
     <div>
          <nav className="flex justify-between  top-0 mt-7">
-      <div className=" text-xl font-semibold">ninox</div>
-      <div className=" flex justify-between gap-x-16 -ml-20 text-xs ">
+      <div className=" flex justify-between gap-x-16 -ml-20 text-xs">
         
       <div> Product ⋎</div>
       <div> Pricing</div>
