@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import ScrollAnimation from "@/components/ScrollAnimation";
-import UserNo from "@/components/userNum"
+import ScrollAnimation from "@/components/preComponents/ScrollAnimation";
+import UserNo from "@/components/preComponents/userNum"
 
-import GetStarted from '@/components/GetStarted'
+import GetStarted from '@/components/preComponents/GetStarted'
 
 
 export default function Home() {
