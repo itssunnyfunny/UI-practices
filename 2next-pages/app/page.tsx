@@ -8,13 +8,17 @@ import ScrollAnimation from "@/components/preComponents/ScrollAnimation";
 import UserNo from "@/components/preComponents/userNum"
 
 import GetStarted from '@/components/preComponents/GetStarted'
+import Basic from "@/components/Anim/Basic";
 
 
 export default function Home() {
  const router  = useRouter()
   return (
   <>
-  <main className="flex min-h-screen flex-col items-center justify-center mb-[600px]">
+   <Basic />
+
+
+  {/* <main className="flex min-h-screen flex-col items-center justify-center mb-[600px]">
    
    <motion.div
    initial={{opacity:0,y:-50}}
@@ -44,7 +48,7 @@ export default function Home() {
    <div>
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis esse eos sed! Eligendi dolore nihil provident ratione, enim veritatis soluta necessitatibus dolorum. Quibusdam voluptates laboriosam unde laudantium aliquid ea repudiandae?
    </div>
-   <ScrollAnimation><GetStarted /></ScrollAnimation>
+   <ScrollAnimation><GetStarted /></ScrollAnimation> */}
   </>
   );
 }
